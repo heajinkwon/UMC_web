@@ -1,0 +1,68 @@
+/* css문법 : 선택자 {css속성 : value}
+태그 클래스 id */
+
+/* 우선순위 : id -> class/가상 선택자 -> tag 순
+    !important; 쓰면 가장 우선순위 지정 
+    가상선택자는 특정 태그에만 적용가능
+    가상선택자 :hover : 마우스 커서 올렸을 때   
+                active : 마우스를 누르고 있을 때
+                focus : 마우스 클릭 한번만 하면 계속 눌러져있음
+    
+태그이름{
+
+}
+
+.클래스이름{
+
+}   
+
+#id이름{
+
+}
+
+태그이름 : hover{
+
+}
+
+id가 우선순위이기 때문에 div:hover해도 먹히지 않음
+--> #green(id이름) : hover{ } 로 따로 지정해야함
+*/
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 30px;
+    background-color: pink;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+div:hover{
+    background-color: grey;
+}
+
+#green:hover{
+    background-color: grey;
+}
+
+div:active{
+    background-color: purple;
+}
+input:focus{
+    background-color: blue;
+}
