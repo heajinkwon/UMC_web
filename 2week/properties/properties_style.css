@@ -1,0 +1,120 @@
+/*
+inline : span, a, img, button --> width height 적용의미 X
+block : p, div, ul, li, h1-h6 --> width height 적용 가능
+display : none, inline, block, inline-block
+태그 : nth-child(숫자) {
+    해당 태그의 n 번째 요소
+}
+
+reset css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 모든 태그에 적용 */
+*{
+    box-sizing : border-box;
+}
+
+html{
+    font-size : 16px;
+}
+
+p,span{
+    width : 100px;
+    height : 100px;
+}
+
+p{
+    background-color: coral;
+    /* display : inline; */
+    display : inline-block;
+}
+
+span {
+    background: teal;
+    /* span은 p와 다르게 요소마다 간격이 x */
+    /* display : block; */
+}
+
+p:nth-child(5) {
+    /* 위 오른 아래 왼 (시계방향)*/
+    margin : 30px 40px 50px 60px;
+    padding : 10px;
+    border : 3px solid blue;
+    border-bottom-width : 10px;
+}
+
+
+/*px: 절대단위 em rem 상대단위
+  em : 부모가 기준
+  rem : root-em의 약자로, 가장 최상위태그(html)
+
+반응형 웹페이지의 발전에 따라 px보다 em/ rem을 쓰는 것을 권장*/ 
+
+div{
+    /* font-size 16px*1.5 = 24px */
+    margin-top : 20px;
+    background-color: lightblue;
+    width : 200px;
+    height : 200px;
+    font-size : 1.5rem;
+}
+
+/*div내 span에만 적용*/
+div span{
+    /*em은 부모의 fontsize를 기준으로 함.
+    현재 span의 부모 div fontsize는 24px
+    24 * 1.2 = 28.8px */
+    font-size : 1.2em;
+    height : 80%; /*부모 */
+    width : 100%;
+}
+
+/*브라우저마다 태그에 대한 기본 스타일링 존재 --> 개발자도구확인*/
