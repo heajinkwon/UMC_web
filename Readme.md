@@ -6,3 +6,4 @@
 <p> 5주차 https://canyon-legend-183.notion.site/Web-5-b98439bcb4ab48b596c5f0a3c6ff3592 </p>
 <p> 6주차 https://canyon-legend-183.notion.site/Web-6-80b57b41dd8f4519869d3b1e24fcad9c </p>
 <p> 7주차 https://canyon-legend-183.notion.site/Web-7-e64382c2d1384f71bb4d2b44e63f45a9 </p>
+<p> 8주차 https://www.notion.so/Web-8-812dc039423745cfbbaa1aaed005ff29 </p>
